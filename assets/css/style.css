@@ -79,7 +79,7 @@ sub { bottom: -.25em; }
 }
 
 .cf:after { clear: both; }
-.cf { *zoom: 1; }
+/* .cf { *zoom: 1; } */
 
 /*for all*/
 body {
@@ -102,48 +102,89 @@ li {
   max-width: 1360px;
   width: 86%; 
   margin: 0 auto;
+} 
+
+/* common class style start */
+
+.caps_first::first-letter { text-transform: capitalize; }
+.caps { text-transform: uppercase; }
+.font_color_white { color: #fff; }
+
+.button {
+  padding: 25px 80px;
+  border: 2px solid white;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: bold;
+  white-space: nowrap;
 }
-/*=================================
-  Header styling starts here
-=================================*/
 
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
+/* commn class style end */
 
 /*=================================
   main styling starts here
 =================================*/
 
+.split_landing_page .wrapper {
+  width: 100%;
+  min-height: 640px;
+  display: flex;  
+  position: relative;
+}
 
+.wrapper figure {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
 
+.wrapper figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.first_half ,.second_half {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
 
+.first_half { 
+  width: 50%;
+  left: 0; 
+}
 
+.second_half { 
+  width: 50%;
+  right: 0; 
+}
 
+h1, .button { position: absolute; }
 
+h1 {
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 62px;
+  font-weight: bolder;
+  white-space: nowrap;
+}
+
+.first_half .button:hover {
+  border-color: #5754ec;
+  background: #5754ec;
+}
+.second_half .button:hover {
+  border-color: #1c7a1c;
+  background: #1c7a1c;
+}
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
