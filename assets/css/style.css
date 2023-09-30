@@ -182,6 +182,10 @@ h1 {
   border-color: #1c7a1c;
   background: #1c7a1c;
 }
+
+.hover-left { width: 65% }
+.hover-right { width: 35%; }
+
 /*=================================
   main styling ends here
 =================================*/
