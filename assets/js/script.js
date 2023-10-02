@@ -4,14 +4,17 @@
 
 const sectionFirst=document.querySelector('.first_half');
 const sectionSecond=document.querySelector('.second_half');
+const wrapperSection=document.querySelector('.wrapper')
 
 window.addEventListener('load',() => {
 
-    sectionFirst.addEventListener('mouseenter', () => container.classList.add('hover-left'))
-    sectionSecond.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
+
+    left.addEventListener('mouseenter', () => container.classList.add('hover-left'))
+    left.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
     
-    sectionSecond.addEventListener('mouseenter', () => container.classList.add('hover-right'))
-    sectionFirst.addEventListener('mouseleave', () => container.classList.remove('hover-right'))
+    right.addEventListener('mouseenter', () => container.classList.add('hover-right'))
+    right.addEventListener('mouseleave', () => container.classList.remove('hover-right'))
+   
 })
 
 

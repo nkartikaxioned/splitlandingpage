@@ -119,6 +119,7 @@ li {
   transform: translate(-50%,-50%);
   font-weight: bold;
   white-space: nowrap;
+  transition: .3s;
 }
 
 /* commn class style end */
@@ -183,8 +184,11 @@ h1 {
   background: #1c7a1c;
 }
 
-.hover-left { width: 65% }
-.hover-right { width: 35%; }
+.first_half .left {width: 70%} 
+.second_half .left {width: 70%;}
+.first_half .right {width: 30%} 
+.second_half .right {width: 30%;} 
+
 
 /*=================================
   main styling ends here
