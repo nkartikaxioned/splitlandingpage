@@ -152,16 +152,19 @@ li {
   position: absolute;
   top: 0;
   overflow: hidden;
+  background: rgba(141, 80, 239,0.2);
 }
 
 .first_half { 
   width: 50%;
   left: 0; 
+  transition: all ease-in-out 1s;
 }
 
 .second_half { 
   width: 50%;
   right: 0; 
+  transition:all ease-in-out 1s;
 }
 
 h1, .button { position: absolute; }
@@ -173,6 +176,7 @@ h1 {
   font-size: 62px;
   font-weight: bolder;
   white-space: nowrap;
+  text-shadow: 0 0 2px black;
 }
 
 .first_half .button:hover {
